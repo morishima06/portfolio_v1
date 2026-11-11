@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PORTFOLIO | 制作実績</title>
+    <link rel="stylesheet" href="/src/scss/works/location.scss">
+</head>
+
+<main class="wrapper portfolio-page">
+    <section class="work-section">
+        <h1>ポートフォリオサイト</h1>
+        <div class="horizontal"></div>
+
+        <a href="https://sm-portfolio.net/" target="_blank" rel="noopener noreferrer">
+            <img class="work-image"  width="500" src="/images/portfolio.png" alt="ポートフォリオサイト">
+        </a>
+
+        <p>
+            HP:
+            <a href="https://sm-portfolio.net/" target="_blank" rel="noopener noreferrer">
+                https://sm-portfolio.net/
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/morishima06/ms-portfolio" target="_blank" rel="noopener noreferrer">
+                https://github.com/morishima06/ms-portfolio
+            </a>
+        </p>
+    </section>
+
+    <section class="work-section">
+        <h2>使用環境</h2>
+        <div class="horizontal"></div>
+
+        <ul>
+            <li>PHP 8.0.8</li>
+            <li>Laravel 8.83.23</li>
+            <li>JavaScript (jQuery)</li>
+            <li class="list_none">- Ajax</li>
+            <li>Sass (CSS)</li>
+            <li>Webpack / Laravel Mix (ビルドツール)</li>
+            <li>Heroku</li>
+            <li class="list_none">- お名前.com (DNS)</li>
+            <li class="list_none">- Cloudflare (SSL)</li>
+        </ul>
+
+        <h3>インフラ構成</h3>
+
+        <div class="infrastructure">
+            <p><strong>開発環境</strong></p>
+            <p>Laravel / MySQL / MAMP (Apache)</p>
+            <p class="infrastructure-arrow">↓</p>
+            <p>GitHub</p>
+            <p class="infrastructure-arrow">↓</p>
+            <p><strong>本番環境</strong></p>
+            <p>Laravel / MySQL</p>
+            <p>Heroku (Apache)</p>
+        </div>
+    </section>
+
+    <section class="work-section">
+        <h2>制作サイト一覧</h2>
+        <div class="horizontal"></div>
+
+        <ul>
+            <li>
+                <a href="https://search-shops.com/" target="_blank" rel="noopener noreferrer">
+                    search (ECサイト)
+                </a>
+            </li>
+            <li>
+                <a href="https://location-shops.com/" target="_blank" rel="noopener noreferrer">
+                    location (アパレルショップ検索サイト)
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="work-section">
+        <h2>機能一覧</h2>
+        <div class="horizontal"></div>
+
+        <ul>
+            <li>お問い合わせフォーム</li>
+        </ul>
+
+        <h3>主な機能</h3>
+
+        <div class="feature-section">
+            <h4>お問い合わせフォームのバリデーションチェック</h4>
+
+            <p>
+                初期はバックエンドでバリデーションしていましたが、
+                入力フォームではjQueryを使用してバリデーションを実装しています。
+                入力がなければエラーメッセージが表示されます。
+            </p>
+
+            <div class="movie">
+                <a href="https://gyazo.com/685fc5c0d855a22e45b460d6f84e3365" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.gyazo.com/685fc5c0d855a22e45b460d6f84e3365.gif" alt="お問い合わせフォームのバリデーション動作">
+                </a>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <h4>送信確認画面</h4>
+
+            <p>
+                メールの送信はAjaxにて実装しています。
+                最後に送信完了メッセージが表示されます。
+            </p>
+
+            <div class="movie">
+                <a href="https://gyazo.com/488acec3e6904aaa409ee27c4b72b11d" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.gyazo.com/488acec3e6904aaa409ee27c4b72b11d.gif" alt="お問い合わせ送信の動作">
+                </a>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="mail-section">
+                <h4>自動送信メール</h4>
+                <p>送信者に自動返信メールを送っています。</p>
+
+                <div class="movie">
+                    <img src="https://sm-portfolio-s3.s3.ap-northeast-1.amazonaws.com/portfolio_screen_mail1.png"
+                        alt="自動送信メールの画面">
+                </div>
+            </div>
+
+            <div class="mail-section">
+                <h4>受信メール</h4>
+                <p>お問い合わせ内容を受信するメールになります。</p>
+
+                <div class="movie">
+                    <img src="https://sm-portfolio-s3.s3.ap-northeast-1.amazonaws.com/portfolio_screen_mail2.png"
+                        alt="お問い合わせ受信メールの画面">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-section">
+        <h2>総評</h2>
+        <div class="horizontal"></div>
+
+        <h3>感想</h3>
+
+        <p>
+            Herokuでデプロイしていますが、Ecoプランの関係で
+            30分間アクセスがないとサーバーが停止するため、
+            不便に感じることがありました。
+            また、SSL化もCloudflareで対応しており、
+            料金に対するコストパフォーマンスがあまり良くないと感じました。
+            今後、新しいサービスをリリースする際は、
+            別のサーバーも選択肢に入れたいと思います。
+            一方で、AWSのような柔軟性はありませんが、
+            デプロイが非常に簡単な点は魅力だと感じました。
+        </p>
+    </section>
+
+    <p class="back-link">
+        <a href="/">作品一覧へ戻る</a>
+    </p>
+</main>
+    <!-- JavaScript -->
+    <script type="module" src="/src/js/main.js"></script>
+    
+    </body>
+    
+    </html>

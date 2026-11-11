@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEARCH | 制作実績</title>
+    <link rel="stylesheet" href="/src/scss/works/location.scss">
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <h1>search</h1>
+        <div class="horizontal"></div>
+
+        <a href="https://search-shops.com/" target="_blank" rel="noopener noreferrer">
+            <img src="/images/search.png" alt="search ECサイト画面" width="500">
+        </a>
+
+        <p>
+            HP:
+            <a href="https://search-shops.com/" target="_blank" rel="noopener noreferrer">
+                https://search-shops.com/
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/morishima06/search" target="_blank" rel="noopener noreferrer">
+                https://github.com/morishima06/search
+            </a>
+        </p>
+
+        <h1>サービス概要</h1>
+        <div class="horizontal"></div>
+
+        <p>アパレルECサイト</p>
+
+        <h2>制作理由</h2>
+        <p>
+            制作当初は価格.comに類似した、アパレルショップのスクレイピングアンテナサイトを制作・運用しようと考えていました。<br>
+            しかし、制作していく中でいくつかの懸念を感じ、自身の学習も含めてスクレイピングサイトを改変しながらECサイトを制作しました。
+        </p>
+
+        <h1>使用技術・言語・環境</h1>
+        <div class="horizontal"></div>
+
+        <ul>
+            <li>PHP 8.0.8</li>
+            <li>Laravel 8.83.23</li>
+            <li class="list_none">&nbsp;&nbsp;&nbsp;&nbsp;- Laravel Breeze（ログイン機能）</li>
+            <li>Tailwind CSS 3.1.0</li>
+            <li>JavaScript / jQuery / Alpine.js</li>
+            <li>MySQL 5.7.34</li>
+            <li class="list_none">&nbsp;&nbsp;&nbsp;&nbsp;- phpMyAdmin</li>
+            <li>Stripe API（決済機能）</li>
+            <li>Webpack / Laravel Mix（ビルドツール）</li>
+            <li>Mailtrap（メールテスト）</li>
+            <li>AWS</li>
+            <li class="list_none">&nbsp;&nbsp;&nbsp;&nbsp;- VPC</li>
+            <li class="list_none">&nbsp;&nbsp;&nbsp;&nbsp;- EC2（Amazon Linux 2 / Apache）</li>
+            <li class="list_none">&nbsp;&nbsp;&nbsp;&nbsp;- RDS / S3 / ELB / Route 53</li>
+            <li>GitHub Actions（CI/CD）</li>
+        </ul>
+
+        <h2>インフラ構成</h2>
+        <p>
+            <strong>開発環境</strong><br>
+            Laravel / MySQL<br>
+            MAMP（Apache）<br>
+            ↓<br>
+            GitHub / GitHub Actions（デプロイ）<br>
+            ↓<br>
+            <strong>本番環境</strong><br>
+            Laravel / MySQL<br>
+            AWS（Apache）
+        </p>
+
+        <h1>機能一覧</h1>
+        <div class="horizontal"></div>
+
+        <ul>
+            <li>キーワード検索</li>
+            <li class="list_none">&nbsp;&nbsp;&nbsp;&nbsp;- 商品絞り込み</li>
+            <li>会員登録機能</li>
+            <li class="list_none">&nbsp;&nbsp;&nbsp;&nbsp;- メール認証会員登録</li>
+            <li class="list_none">&nbsp;&nbsp;&nbsp;&nbsp;- パスワード再発行</li>
+            <li>商品出品・登録・削除</li>
+            <li class="list_none">&nbsp;&nbsp;&nbsp;&nbsp;- ドラッグ＆ドロップによる画像アップロード</li>
+            <li>カート機能（Session管理）</li>
+            <li>決済機能（Stripe API）</li>
+            <li>お問い合わせフォーム</li>
+            <li>ローディング画面アニメーション</li>
+            <li>レスポンシブ対応</li>
+        </ul>
+
+        <h2>主な機能</h2>
+
+        <h3>1. トップカテゴリーのSwiperスライダー</h3>
+        <p>
+            トップページのカテゴリーをSwiper.jsを使用してスライダー表示しています。<br>
+            横幅が狭くなった場合のみスライダーで表示するレスポンシブ仕様にしています。
+        </p>
+
+        <div class="movie">
+            <a href="https://gyazo.com/72616b1cb257265bbe06f32ff8ece0eb" target="_blank" rel="noopener noreferrer">
+                <img src="https://i.gyazo.com/72616b1cb257265bbe06f32ff8ece0eb.gif" alt="トップカテゴリーのスライダー" width="500">
+            </a>
+        </div>
+
+        <h3>2. ドラッグ＆ドロップによる画像表示・登録</h3>
+        <p>
+            ドラッグ＆ドロップで画像を表示し、フォームから登録する仕様です。<br>
+            また、クリックによる画像選択にも対応しています。
+        </p>
+
+        <h4>ドラッグ＆ドロップで表示</h4>
+        <div class="movie">
+            <a href="https://gyazo.com/d70ea05d1f608f35dffe235bd62b3a24" target="_blank" rel="noopener noreferrer">
+                <img src="https://i.gyazo.com/d70ea05d1f608f35dffe235bd62b3a24.gif" alt="ドラッグ＆ドロップによる画像表示" width="500">
+            </a>
+        </div>
+
+        <h4>クリックで表示</h4>
+        <div class="movie">
+            <a href="https://gyazo.com/a4b039cc9af8313e6679faea524189db" target="_blank" rel="noopener noreferrer">
+                <img src="https://i.gyazo.com/a4b039cc9af8313e6679faea524189db.gif" alt="クリックによる画像表示" width="500">
+            </a>
+        </div>
+
+        <h3>3. 出品中の商品削除</h3>
+        <div class="movie">
+            <a href="https://gyazo.com/6b335fc5dbd9733ae52f69c234394a6a" target="_blank" rel="noopener noreferrer">
+                <img src="https://i.gyazo.com/6b335fc5dbd9733ae52f69c234394a6a.gif" alt="出品中の商品削除" width="500">
+            </a>
+        </div>
+
+        <h3>4. Stripe APIによる決済機能</h3>
+
+        <div>
+            <h4>カート画面</h4>
+            <p>
+                Ajaxを使用してカート商品の追加・削除を実装しています。<br>
+                カートアイコンの数字や商品合計金額も連動して変動するようにしています。<br>
+                また、カート情報はSessionで管理しています。
+            </p>
+            <div class="movie">
+                <a href="https://gyazo.com/df6a22c20b57b5b159641930217b0629" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.gyazo.com/df6a22c20b57b5b159641930217b0629.gif" alt="カート画面の操作" width="500">
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <h4>決済確認画面</h4>
+            <p>
+                決済確認画面です。<br>
+                配送先も変更できるようにしています。
+            </p>
+            <div class="movie">
+                <a href="https://gyazo.com/0b637f8acb37a3f14f9c21a86cceda3a" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.gyazo.com/0b637f8acb37a3f14f9c21a86cceda3a.gif" alt="決済確認画面" width="500">
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <h4>決済画面</h4>
+            <p>
+                Stripe APIを使用して決済しています。<br>
+                TESTモードのため実際には決済されませんが、決済が完了すると決済確認画面が表示されます。
+            </p>
+            <div class="movie">
+                <a href="https://gyazo.com/1b275523c302277fece4bca2329c4a9a" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.gyazo.com/1b275523c302277fece4bca2329c4a9a.gif" alt="Stripeによる決済画面" width="500">
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <h4>Stripe管理画面</h4>
+            <p>Stripeの管理画面でも決済完了を確認できます。</p>
+            <img src="/images/search_stripe_screen.png" alt="Stripe管理画面の決済履歴" width="500">
+        </div>
+
+        <h1>ER図</h1>
+        <div class="horizontal"></div>
+
+        <img src="https://github.com/morishima06/search/assets/91010416/bcd65dc9-ee06-48c9-8c39-f4dbd4e9d147"
+            alt="searchのER図" width="500">
+            
+
+        <h1>総評</h1>
+        <div class="horizontal"></div>
+
+        <h2>感想</h2>
+        <p>
+            とにかく完成させることを目的としていたため、コードがかなり雑な作りになってしまったと感じています。<br>
+            動作はしているものの、Fat Controllerになっていたり、N+1問題やテーブルの正規化など、
+            保守性・パフォーマンスの面で課題が残っていました。
+            ある程度知識がついた現在では、その点を改善する余地があったと感じています。<br>
+            結果論ですが、Blade構文ではなくReactやVueでフロントエンドを作成した方が、
+            後から学習することを考えると時間効率が良かったと思います。
+            また、デザインを十分に意識して制作していなかったため、
+            テンプレートを活用した方が効率的だったとも感じています。
+        </p>
+
+        <h2>今後、実装したいこと</h2>
+
+        <h3>会員登録機能の充実</h3>
+        <p>
+            ワンタイムパスワードによる認証や多要素認証を実装したいと考えています。<br>
+            また、Laravel BreezeではなくJetstreamを利用するか、独自に認証機能を実装してみたいと思います。
+        </p>
+
+        <h3>カートのロック機能</h3>
+        <p>
+            カートにロック機能を追加し、複数ユーザーによる同一商品の購入競合を防止する仕組みを実装したいと思います。
+        </p>
+
+        <p>
+            <a href="/">作品一覧へ戻る</a>
+        </p>
+    </div>
+
+        <!-- JavaScript -->
+        <script type="module" src="/src/js/main.js"></script>
+
+</body>
+
+
+</html>
+
+    

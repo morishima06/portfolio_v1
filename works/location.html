@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOCATION | 制作実績</title>
+  <link rel="stylesheet" href="/src/scss/works/location.scss">
+</head>
+
+<body>
+  <main class="wrapper">
+    <h1>LOCATION</h1>
+    <div class="horizontal"></div>
+
+    <a href="https://location-shops.com/" target="_blank" rel="noopener noreferrer">
+      <img src="https://sm-portfolio-s3.s3.ap-northeast-1.amazonaws.com/location_screen.png" alt="LOCATIONの画面"
+        width="500">
+    </a>
+
+    <p>
+      HP:
+      <a href="https://location-shops.com/" target="_blank" rel="noopener noreferrer">
+        https://location-shops.com/
+      </a>
+    </p>
+
+    <p>
+      GitHub:
+      <a href="https://github.com/morishima06/location?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">
+        https://github.com/morishima06/location
+      </a>
+    </p>
+
+    <section>
+      <h2>サービス概要</h2>
+      <div class="horizontal"></div>
+
+      <p>アパレルショップ検索アプリです。</p>
+
+      <h3>制作目的</h3>
+      <p>
+        店舗を探す際、Googleやショップサイトで住所情報を得ることはできますが、
+        情報を一括して調べられるようにし、目的の店舗にたどり着くまでの手間を省きたいと思い作成しました。
+        また、将来的に運用できること、個人的に多少なりとも知見があること、
+        身近で需要がありそうなサービスであることを考え、アパレルショップ検索アプリにしました。
+      </p>
+
+      <h3>参考サイト</h3>
+      <p>UI・デザインの一部を参考にしました。</p>
+
+      <ul>
+        <li>
+          <a href="https://shop.adidas.jp/store_locator/" target="_blank" rel="noopener noreferrer">
+            ADIDAS 店舗情報
+          </a>
+        </li>
+        <li>
+          <a href="https://www.lacoste.jp/storefinder" target="_blank" rel="noopener noreferrer">
+            LACOSTE 店舗情報
+          </a>
+        </li>
+        <li>
+          <a href="https://tabelog.com/" target="_blank" rel="noopener noreferrer">
+            食べログ
+          </a>
+          など
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>使用技術・言語・環境</h2>
+      <div class="horizontal"></div>
+
+      <ul>
+        <li>
+          React 18.2
+          <ul>
+            <li>Atomic Design</li>
+            <li>ESLint</li>
+            <li>Prettier</li>
+          </ul>
+        </li>
+        <li>PHP 8.2.15</li>
+        <li>
+          Laravel 9.52.7
+          <ul>
+            <li>Laravel Breeze（ログイン機能）</li>
+            <li>Laravel Query Detector（N+1検知）</li>
+          </ul>
+        </li>
+        <li>Inertia.js</li>
+        <li>Tailwind CSS 3.2.1</li>
+        <li>
+          MySQL
+          <ul>
+            <li>Sequel Ace（SQL管理ツール）</li>
+          </ul>
+        </li>
+        <li>Docker / Docker Compose</li>
+        <li>Vite（ビルドツール）</li>
+        <li>お名前.com（DNS）</li>
+        <li>GitHub Actions（CI/CD）</li>
+        <li>
+          AWS
+          <ul>
+            <li>VPC（EC2 / Amazon Linux 2 / NGINX / ELB / Route 53 / RDS）</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>インフラ構成</h3>
+      <div class="infrastructure">
+        <p><strong>開発環境</strong></p>
+        <p>React / Laravel / MySQL / Docker / Docker Compose（NGINX）</p>
+
+        <p class="arrow">↓</p>
+
+        <p>GitHub / GitHub Actions（ビルド・デプロイ）</p>
+
+        <p class="arrow">↓</p>
+
+        <p><strong>本番環境</strong></p>
+        <p>React / Laravel / MySQL</p>
+        <p>AWS（NGINX）</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>機能一覧</h2>
+      <div class="horizontal"></div>
+
+      <ul>
+        <li>
+          検索機能
+          <ul>
+            <li>キーワード検索</li>
+            <li>キーワード履歴表示</li>
+            <li>ブランド検索</li>
+            <li>ブランド一覧表示</li>
+            <li>エリア検索</li>
+            <li>エリア一覧表示</li>
+          </ul>
+        </li>
+        <li>
+          Google Maps
+          <ul>
+            <li>店舗情報を地図上に表示</li>
+          </ul>
+        </li>
+        <li>ログイン機能</li>
+        <li>店舗情報の登録・編集</li>
+        <li>ブランド・エリアの追加</li>
+        <li>レスポンシブ対応</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>主な機能</h2>
+
+      <div class="feature">
+        <h3>1. Cookieを使った検索機能</h3>
+        <p>
+          React Cookieを使用し、検索時に検索履歴を保存・表示できるようにしています。
+          また、検索履歴を削除することもできます。
+        </p>
+
+        <div class="movie">
+          <a href="https://gyazo.com/3655dd64d8694174eec22e2c55a966f8" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.gyazo.com/3655dd64d8694174eec22e2c55a966f8.gif" alt="検索履歴機能のデモ" width="500">
+          </a>
+        </div>
+      </div>
+
+      <div class="feature">
+        <h3>2. Google Mapsでの店舗情報表示</h3>
+        <p>
+          Google Maps APIを使用し、店舗情報に連動したマーカーを表示しています。
+          店舗を選択すると、対応するマーカーと地図の表示位置も移動します。
+        </p>
+
+        <div class="movie flex">
+          <div class="movie-item">
+            <p>PC版</p>
+            <a href="https://gyazo.com/191121340319a2c50443e267214bdeb1" target="_blank" rel="noopener noreferrer">
+              <img src="https://i.gyazo.com/191121340319a2c50443e267214bdeb1.gif" alt="PC版の地図表示デモ" width="500">
+            </a>
+          </div>
+
+          <div class="movie-item">
+            <p>スマートフォン版</p>
+            <a href="https://gyazo.com/c4f89fa343ae93c67dcc84e04c796746" target="_blank" rel="noopener noreferrer">
+              <img src="https://i.gyazo.com/c4f89fa343ae93c67dcc84e04c796746.gif" alt="スマートフォン版の地図表示デモ" height="245">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature">
+        <h3>3. Fetch APIを使った店舗情報登録</h3>
+        <p>
+          Fetch APIで郵便番号検索APIと通信し、取得した住所をフォームに反映しています。
+          また、検索した都道府県に対応するエリア情報をデータベースから取得し、
+          新しいエリアを登録する際のエリアコードにも連動させています。
+        </p>
+
+        <div class="movie">
+          <a href="https://gyazo.com/c28e298edd43689544bd7371159d56ae" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.gyazo.com/c28e298edd43689544bd7371159d56ae.gif" alt="郵便番号検索を使った店舗登録のデモ" width="500">
+          </a>
+        </div>
+
+        <p>Fetch APIでエリアを登録し、新しく追加したエリアも画面に反映しています。</p>
+
+        <div class="movie">
+          <a href="https://gyazo.com/3e134804f35951f9434fbe42d774a10b" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.gyazo.com/3e134804f35951f9434fbe42d774a10b.gif" alt="エリア登録のデモ" width="500">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>ER図</h2>
+      <div class="horizontal"></div>
+
+      <p class="er-description">
+        Shopsテーブルを軸に、正規化を意識して設計しました。
+      </p>
+
+      <div class="er-image">
+        <img src="https://github.com/morishima06/brand-search/assets/91010416/1940c920-15ff-4633-8f4f-cf9579b79e2f"
+          alt="LOCATIONのER図">
+      </div>
+    </section>
+
+    <section>
+      <h2>総評</h2>
+      <div class="horizontal"></div>
+
+      <h3>感想</h3>
+      <p>
+        作り終えて感じたのは、設計や基礎部分の理解がとても重要だということです。
+        作りたいものに対して、どのような技術を使うのか、データベースやデザイン、フォルダ構成をどう設計するのかを
+        初期段階で選定することが大切だと感じました。
+        開発中に技術を導入しては変更することを繰り返したため、途中から設計が噛み合わなくなり、
+        無駄な工程や手戻りが発生しました。
+        また、フレームワークを使えば、ネットの記事を参考にして機能を動かすこと自体はできますが、
+        独自の機能を作るには、基礎や仕組みを理解していないと思いどおりに動かせないと実感しました。
+        他のアプリと同様、完成を優先したため、デザインをもっと作り込めなかったことが少し心残りです。
+      </p>
+
+      <h3>今後の課題</h3>
+
+      <h4>TypeScriptの導入</h4>
+      <p>
+        学習コストを考えて導入を見送りましたが、型を定義することの重要性を実感しました。
+        今後はTypeScriptを導入したいと考えています。
+      </p>
+
+      <h4>不要なレンダリングの削減</h4>
+      <p>
+        一部で使用していますが、useMemoやuseCallbackを適切に活用し、
+        不要なレンダリングを抑えることでパフォーマンスを改善したいと考えています。
+      </p>
+
+      <h4>CI/CDの改善・コンテナデプロイ</h4>
+      <p>
+        本番環境は手動で構築したため、今後はコンテナを使ったデプロイに変更したいと考えています。
+        また、現在のGitHub Actionsではビルドとデプロイを自動化していますが、
+        GitHub Actions上でテストを実行できていません。
+        コンテナデプロイと合わせて、テストからビルド・デプロイまで自動化したいと考えています。
+      </p>
+
+      <h3>制作を終えて</h3>
+      <p>
+        Webデザイン制作会社に勤めていた経験もあり、そこまで苦労しないと思っていました。
+        しかし、働きながら制作を進める中で学ぶことが非常に多く、難しさ以上に時間が足りないと感じました。
+        AWSを導入した際にはインフラの知識も必要になり、サブネットマスク、CIDR、パブリックIPなどを
+        理解するためにも時間がかかりました。学ぶことに終わりはないと感じています。
+        また、技術の移り変わりがとても早いことも実感しました。
+        制作会社に入社した頃はjQueryがよく使われており、AngularをJavaScriptのフレームワークとして認識していましたが、
+        その後ReactやVueなどを学ぶようになりました。
+        ビルドツールについてもWebpackを学んだ後、Viteを学び直しました。
+        こうした経験から、感覚だけで実装するのではなく、最低限の仕組みや構造を理解したうえで開発することが
+        大切だと感じています。ログイン機能であればセッションやCookie、Reactであればライフサイクルなど、
+        基礎を理解することが重要だと思います。
+        もともとコードを書くことが苦ではなかったこともあり、苦労しながらも制作と学習を続けてこられてよかったです。
+      </p>
+
+      <p class="thanks">
+        ここまでご覧いただき、ありがとうございました。
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

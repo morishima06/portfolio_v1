@@ -1,0 +1,575 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shunya Morishima Portfolio">
+    <meta name="author" content="Shunya Morishima">
+
+    <title>Shunya Morishima | Portfolio</title>
+
+    <!-- Font Awesome -->
+    <script
+        src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- SCSS -->
+    <link rel="stylesheet" href="/src/scss/top.scss">
+
+</head>
+
+<body>
+
+    <!-- フロートメニュー -->
+    <nav class="floating_menu" aria-label="メインナビゲーション">
+        <div class="main_menu">
+            <ul>
+                <li class="menu_content">
+                    <a class="floating_link" href="#top">
+                        <span class="main_list">トップ</span>
+                        <span class="sub_list">top</span>
+                    </a>
+                </li>
+
+                <li class="menu_content">
+                    <a class="floating_link" href="#experience">
+                        <span class="main_list">私について</span>
+                        <span class="sub_list">about</span>
+                    </a>
+                </li>
+
+                <li class="menu_content">
+                    <a class="floating_link" href="#skill">
+                        <span class="main_list">スキル</span>
+                        <span class="sub_list">skill</span>
+                    </a>
+                </li>
+
+                <li class="menu_content">
+                    <a class="floating_link" href="#work">
+                        <span class="main_list">作品</span>
+                        <span class="sub_list">work</span>
+                    </a>
+                </li>
+
+                <li class="menu_content">
+                    <a class="floating_link" href="#contact">
+                        <span class="main_list">お問い合わせ</span>
+                        <span class="sub_list">contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ハンバーガーボタン -->
+    <button
+        class="nav_button"
+        type="button"
+        aria-label="メニューを開く"
+        aria-expanded="false">
+
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+    </button>
+
+
+    <main class="frame">
+
+        <!-- トップ -->
+        <section class="section_top" id="top">
+            <div class="top_content">
+                <h1 class="top_text">PORTFOLIO</h1>
+                <div class="underline"></div>
+                <h3 class="top_text_name">MORISHIMA SHUNYA</h3>
+            </div>
+
+            <div class="triangle"></div>
+        </section>
+
+        <hr>
+
+
+        <!-- 私について -->
+        <section class="section_content" id="experience">
+
+            <div class="about">
+                <h2 class="content_title">私について</h2>
+
+                <div class="intro">
+                    <p>
+                        神奈川在住。個人事業主としてアパレル販売する中で
+                        海外向けアパレル版価格.comのようなサイトに出会い、
+                        日本向けのサイトとして作成してみたいと思い
+                        プログラミングを学習、作品の制作を行う。
+                        また、勉強する中でより本格的にWEBサービスの
+                        開発を行いたいと思い現在に至る。
+                    </p>
+                </div>
+
+                <!-- 学歴 -->
+                <div class="career_item">
+
+                    <p class="career_title">学歴</p>
+
+                    <div class="career_content">
+
+                        <div class="career_content_in">
+                            <p>日本大学 法学部 法律学科</p>
+                            <p>UKGトータルクリエイティブスクール</p>
+                        </div>
+
+                        <div class="carrer_month">
+                            <p>2009年9月〜2014年3月</p>
+                            <p>2016年1月〜2016年6月</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 職歴 -->
+                <div class="career_item">
+
+                    <p class="career_title">職歴</p>
+
+                    <div class="career_content">
+
+                        <div class="career_content_in">
+                            <p>アニメーション制作 / 制作進行</p>
+                            <p>web制作 / webデザイナー・コーダー</p>
+                            <p>個人事業主 / アパレル販売</p>
+                            <p>エステサロン / 受付・管理</p>
+                        </div>
+
+                        <div class="carrer_month">
+                            <p>2013年9月〜2015年12月</p>
+                            <p>2016年7月〜2017年10月</p>
+                            <p>2017年11月〜2020年11月</p>
+                            <p>2021年2月〜2023年9月</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!-- スキル -->
+        <section class="section_content" id="skill">
+
+            <div class="skill">
+
+                <h2 class="content_title">スキル</h2>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-0">
+
+                    <div class="skill_top">
+
+                        <!-- 言語・フレームワーク -->
+                        <div>
+
+                            <div class="skill_item">
+                                <h3 class="skill_title">
+                                    <strong>言語</strong>
+                                </h3>
+
+                                <ul class="skill_list_item">
+                                    <li class="skill_list">HTML</li>
+                                    <li class="skill_list">CSS</li>
+                                    <li class="skill_list">PHP</li>
+                                    <li class="skill_list">JavaScript</li>
+                                    <li class="skill_list">TypeScript</li>
+                                    <li class="skill_list">Python</li>
+                                    <li class="skill_list">MySQL</li>
+                                </ul>
+                            </div>
+
+                            <div class="skill_item">
+                                <h3 class="skill_title">
+                                    <strong>フレームワーク</strong>
+                                </h3>
+
+                                <ul class="skill_list_item">
+                                    <li class="skill_list">React</li>
+                                    <li class="skill_list">jQuery</li>
+                                    <li class="skill_list">Laravel</li>
+                                    <li class="skill_list">Tailwind CSS</li>
+                                    <li class="skill_list">Bootstrap</li>
+                                    <li class="skill_list">SCSS</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                        <!-- 学習内容 -->
+                        <div class="study_item">
+                            <div class="study_subject">
+                                <h3>JavaScript</h3>
+                            </div>
+
+                            <div>
+                                <p>
+                                    ES2015<br>
+                                    DOM操作
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="study_item">
+                            <div class="study_subject">
+                                <h3>jQuery</h3>
+                            </div>
+
+                            <div>
+                                <p>Ajax</p>
+                            </div>
+                        </div>
+
+
+                        <div class="study_item">
+                            <div class="study_subject">
+                                <h3>CSS</h3>
+                            </div>
+
+                            <div>
+                                <p>CSSアニメーション</p>
+                            </div>
+                        </div>
+
+
+                        <div class="study_item">
+                            <div class="study_subject">
+                                <h3>Python</h3>
+                            </div>
+
+                            <div>
+                                <p>スクレイピング</p>
+                            </div>
+                        </div>
+
+
+                        <div class="study_item">
+                            <div class="study_subject">
+                                <h3>Laravel</h3>
+                            </div>
+
+                            <div>
+                                <p>
+                                    CRUD操作<br>
+                                    Laravel UI / Laravel Breeze<br>
+                                    Inertia.js<br>
+                                    Alpine.js<br>
+                                    Laravel 6, 8<br>
+                                    Laravel Mix
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="study_item">
+                            <div class="study_subject">
+                                <h3>React</h3>
+                            </div>
+
+                            <div>
+                                <p>
+                                    React Hooks<br>
+                                    React Router<br>
+                                    Next.js
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="study_item">
+                            <div class="study_subject">
+                                <h3>その他</h3>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Illustrator<br>
+                                    Photoshop<br>
+                                    Homebrew / Nodebrew<br>
+                                    MAMP<br>
+                                    WordPress<br>
+                                    GitHub / GitHub Actions<br>
+                                    Mailtrap<br>
+                                    Docker / Docker Compose<br>
+                                    AWS<br>
+                                    Node.js<br>
+                                    Linux<br>
+                                    Heroku<br>
+                                    Vite / Webpack<br>
+                                    phpMyAdmin / Sequel Ace
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!-- 作品 -->
+        <section class="section_content" id="work">
+
+            <h2 class="content_title">作品</h2>
+
+            <div class="work">
+
+                <!-- Portfolio -->
+                <div class="work_content">
+
+                    <div class="work_content1">
+                        <div class="content1">
+                            <a href="https://sm-portfolio.net/">
+                                    <img src="/images/work_list1.png" alt="Portfolioサイト">
+
+                            </a>
+                        </div>
+
+                        <h3>ポートフォリオサイト</h3>
+                    </div>
+
+                    <div class="buttons">
+                        <a
+                            class="button1"
+                            href="https://github.com/morishima06/ms-portfolio">
+                            GitHub
+                        </a>
+
+                        <a
+                            class="button2"
+                            href="/works/portfolio.html">
+                            詳細ページ
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Search -->
+                <div class="work_content">
+
+                    <div class="work_content2">
+                        <div class="content2">
+                            <a href="https://search-shops.com/">
+<img src="/images/work_list2.png" alt="Searchサイト">
+                            </a>
+                        </div>
+
+                        <h3>Search</h3>
+                    </div>
+
+                    <div class="buttons">
+                        <a
+                            class="button1"
+                            href="https://github.com/morishima06/search">
+                            GitHub
+                        </a>
+
+                        <a
+                            class="button2"
+                            href="/works/search.html">
+                            詳細ページ
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Location -->
+                <div class="work_content">
+
+                    <div class="work_content2">
+                        <div class="content2">
+                            <a href="https://location-shops.com/">
+<img src="/images/work_list3.png" alt="Locationサイト">                            </a>
+                        </div>
+
+                        <h3>Location</h3>
+                    </div>
+
+                    <div class="buttons">
+                        <a
+                            class="button1"
+                            href="https://github.com/morishima06/location">
+                            GitHub
+                        </a>
+
+                        <a
+                            class="button2"
+                            href="/works/location.html">
+                            詳細ページ
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!-- お問い合わせフォーム -->
+        <section class="section_content" id="contact">
+
+            <h2 class="content_title">お問い合わせ</h2>
+
+            <form class="form" id="contact_form">
+
+                <div class="contact_item1">
+
+                    <div class="contact_item1_name">
+                        <label for="contact_name">名前</label>
+
+                        <p>
+                            <input
+                                type="text"
+                                name="username"
+                                id="contact_name"
+                                autocomplete="name">
+                        </p>
+                    </div>
+
+
+                    <div class="contact_item1_mail">
+                        <label for="contact_mail">メールアドレス</label>
+
+                        <p>
+                            <input
+                                type="email"
+                                name="email"
+                                id="contact_mail"
+                                autocomplete="email">
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact_item2">
+
+                    <label for="contact_message">メッセージ</label>
+
+                    <p>
+                        <textarea
+                            id="contact_message"
+                            name="message"
+                            cols="80"
+                            rows="20"></textarea>
+                    </p>
+
+                </div>
+
+                <button class="confirm_btn" type="button">
+                    入力内容を確認する
+                </button>
+
+            </form>
+
+            <div id="err_textarea" aria-live="polite"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- 送信確認モーダル -->
+    <div
+        id="modal_section"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal_title">
+
+        <div class="modal_form">
+
+            <div class="close_button_section">
+
+                <button
+                    class="close_button"
+                    type="button"
+                    aria-label="閉じる">
+
+                    <img
+                        src="https://sm-portfolio-s3.s3.ap-northeast-1.amazonaws.com/close_button.png"
+                        alt="">
+                </button>
+
+            </div>
+
+
+            <div class="modal_main_section">
+
+                <h2 class="modal_title" id="modal_title">
+                    以下の内容でよろしければ送信ボタンを押してください。
+                </h2>
+
+
+                <div class="modal_item">
+                    <p class="modal_item_subject">お名前</p>
+                    <p class="modal_name">name</p>
+                </div>
+
+
+                <div class="modal_item">
+                    <p class="modal_item_subject">メールアドレス</p>
+                    <p class="modal_email">email</p>
+                </div>
+
+
+                <div class="modal_item">
+                    <p class="modal_item_subject">お問い合わせ内容</p>
+                    <p class="modal_message">message</p>
+                </div>
+
+
+                <button class="modal_button" type="button">
+                    送信する
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script type="module" src="/src/js/main.js"></script>
+
+</body>
+</html>
